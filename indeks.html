@@ -1,75 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tatjana Šepur - CV</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f2f2f2; color: #333; line-height: 1.6; padding: 40px; }
-        .container { max-width: 900px; margin: auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1, h2 { color: #004d99; }
-        .section { margin-bottom: 30px; }
-        .section h2 { border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        ul { list-style-type: square; padding-left: 20px; }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tatjana Šepur - Interactive CV</title>
+<!-- Font Awesome CDN za ikonice -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #fff0f5;
+    color: #333;
+  }
+  h1 {
+    color: #c71585;
+    border-bottom: 3px solid #f2a4d4;
+    padding-bottom: 10px;
+  }
+  .nav-icons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+    gap: 30px;
+  }
+  .nav-icons button {
+    background: none;
+    border: none;
+    font-size: 2.8rem;
+    color: #c71585;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .nav-icons button:hover,
+  .nav-icons button.active {
+    color: #ff69b4;
+  }
+  .content-section {
+    display: none;
+    line-height: 1.5;
+  }
+  .content-section.active {
+    display: block;
+  }
+  .section-title {
+    color: #c71585;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  a {
+    color: #c71585;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Tatjana Šepur</h1>
-        <p><strong>Location:</strong> Belgrade, Serbia<br>
-           <strong>Email:</strong> tatjanasepur1@icloud.com<br>
-           <strong>Phone:</strong> +381 60 740 4466<br>
-           <strong>GitHub:</strong> github.com/tatjanasepur</p>
+<h1>Tatjana Šepur - Interactive CV</h1>
 
-        <div class="section">
-            <h2>Objective</h2>
-            <p>Curious and motivated master’s student in Mechanical Engineering transitioning into software development. Passionate about building real-world systems, analyzing data, and learning new technologies.</p>
-        </div>
+<div class="nav-icons">
+  <button title="Skills" id="btn-skills" aria-label="Skills"><i class="fas fa-code"></i></button>
+  <button title="Work Experience" id="btn-work" aria-label="Work Experience"><i class="fas fa-briefcase"></i></button>
+  <button title="Education" id="btn-education" aria-label="Education"><i class="fas fa-graduation-cap"></i></button>
+  <button title="Projects" id="btn-projects" aria-label="Projects"><i class="fas fa-folder-open"></i></button>
+  <button title="Contact" id="btn-contact" aria-label="Contact"><i class="fas fa-envelope"></i></button>
+</div>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Languages & Tools: Oracle PL/SQL, SQL, MATLAB, Simulink, Excel VBA, AutoCAD, CATIA</li>
-                <li>Currently Learning: Angular, Oracle Forms, JSP, JSF, Git</li>
-                <li>Other: MS Office, HTML/CSS (basic), Data modeling, System logic</li>
-            </ul>
-        </div>
+<div id="skills" class="content-section active">
+  <h2 class="section-title">Skills</h2>
+  <ul>
+    <li>Oracle PL/SQL, Oracle Forms</li>
+    <li>Oracle Database Management</li>
+    <li>Java, JSP, JSF</li>
+    <li>Angular (basic)</li>
+    <li>HTML, CSS, JavaScript</li>
+    <li>PHP</li>
+    <li>MATLAB, Simulink</li>
+  </ul>
+</div>
 
-        <div class="section">
-            <h2>Experience</h2>
-            <p><strong>Goša Montaža (Intern) – Feb 2024 to Present</strong><br>
-            Developed application logic to track employee absences. Built reports using PL/SQL and Excel for internal use.</p>
+<div id="work" class="content-section">
+  <h2 class="section-title">Work Experience</h2>
+  <p><strong>Gosa Montaža – Intern, Oracle Software Developer</strong><br />
+     March 2025 – Present<br />
+     Developed and maintained an internal application for employee absence tracking using Oracle PL/SQL and Oracle Forms.<br />
+     Assisted with Angular front-end tasks and bug fixing.<br />
+     Documented software modules and contributed to quality assurance.</p>
+  <p><strong>Stylos Studio – Volunteer Developer</strong><br />
+     Summer 2023<br />
+     Created material tracking tool using Java, JSF, and Oracle DB.</p>
+  <p><strong>Web Intern – Faculty of Mechanical Engineering</strong><br />
+     April–June 2023<br />
+     Maintained internal site with JavaScript, HTML, and PHP. Automated reminders for deadlines.</p>
+</div>
 
-            <p><strong>Stylos Studio (Volunteer Developer) – Nov 2023 to Apr 2024</strong><br>
-            Helped develop a mini tool to track materials and urgent task priorities using SQL logic and frontend mockup.</p>
+<div id="education" class="content-section">
+  <h2 class="section-title">Education</h2>
+  <ul>
+    <li>Master Academic Studies – University of Belgrade, Faculty of Mechanical Engineering (2023–2025)</li>
+    <li>Bachelor’s Degree – University of Belgrade, Faculty of Mechanical Engineering (2019–2023)</li>
+  </ul>
+</div>
 
-            <p><strong>University of Belgrade (Web Assistant) – 2023</strong><br>
-            Maintained internal journal site and created automated deadline notifications for contributors.</p>
-        </div>
+<div id="projects" class="content-section">
+  <h2 class="section-title">Personal Projects</h2>
+  <p><strong>Spending Tracker (2024)</strong><br />
+     Mini web app to track and visualize spending categories.<br />
+     Technologies: HTML, CSS, JavaScript</p>
+  <p><strong>Master Thesis Model (Ongoing)</strong><br />
+     Developed vehicle safety estimation system.<br />
+     Technologies: MATLAB, Simulink</p>
+</div>
 
-        <div class="section">
-            <h2>Academic Projects</h2>
-            <ul>
-                <li><strong>Master Thesis:</strong> Vehicle Safety Model using MATLAB/Simulink with simulated crash input parameters.</li>
-                <li><strong>Personal Expense Tracker:</strong> Mini PL/SQL project to calculate expense percentages and visualize them.</li>
-            </ul>
-        </div>
+<div id="contact" class="content-section">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: <a href="mailto:tatjanasepur1@icloud.com">tatjanasepur1@icloud.com</a><br />
+     Phone: 060 7404 466</p>
+</div>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>University of Belgrade</strong><br>
-            Master’s Degree in Mechanical Engineering (2023–2025)<br>
-            Bachelor’s Degree in Mechanical Engineering (2019–2023)</p>
-        </div>
+<script>
+  const buttons = document.querySelectorAll('.nav-icons button');
+  const sections = document.querySelectorAll('.content-section');
 
-        <div class="section">
-            <h2>Languages</h2>
-            <p>Serbian (Native), English (Native-level)</p>
-        </div>
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      sections.forEach(sec => sec.classList.remove('active'));
+      button.classList.add('active');
+      const id = button.id.replace('btn-', '');
+      document.getElementById(id).classList.add('active');
+    });
+  });
+</script>
 
-        <div class="section">
-            <h2>Additional</h2>
-            <p>B Category Driver’s License</p>
-        </div>
-    </div>
 </body>
 </html>
