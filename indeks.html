@@ -1,147 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tatjana Šepur - Interactive CV</title>
-<!-- Font Awesome CDN za ikonice -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    background-color: #fff0f5;
-    color: #333;
-  }
-  h1 {
-    color: #c71585;
-    border-bottom: 3px solid #f2a4d4;
-    padding-bottom: 10px;
-  }
-  .nav-icons {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0 20px 0;
-    gap: 30px;
-  }
-  .nav-icons button {
-    background: none;
-    border: none;
-    font-size: 2.8rem;
-    color: #c71585;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  .nav-icons button:hover,
-  .nav-icons button.active {
-    color: #ff69b4;
-  }
-  .content-section {
-    display: none;
-    line-height: 1.5;
-  }
-  .content-section.active {
-    display: block;
-  }
-  .section-title {
-    color: #c71585;
-    margin-bottom: 10px;
-  }
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  a {
-    color: #c71585;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tatjana Šepur | Oracle Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --rose-gold: #b76e79;
+      --bg: #fdf8f7;
+      --text: #3a3a3a;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--rose-gold);
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: var(--rose-gold);
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-left: 5px solid var(--rose-gold);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    a {
+      color: var(--rose-gold);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-<h1>Tatjana Šepur - Interactive CV</h1>
+  <header>
+    <h1>Tatjana Šepur</h1>
+    <p>Oracle PL/SQL Developer | Web Developer | Software Support</p>
+  </header>
 
-<div class="nav-icons">
-  <button title="Skills" id="btn-skills" aria-label="Skills"><i class="fas fa-code"></i></button>
-  <button title="Work Experience" id="btn-work" aria-label="Work Experience"><i class="fas fa-briefcase"></i></button>
-  <button title="Education" id="btn-education" aria-label="Education"><i class="fas fa-graduation-cap"></i></button>
-  <button title="Projects" id="btn-projects" aria-label="Projects"><i class="fas fa-folder-open"></i></button>
-  <button title="Contact" id="btn-contact" aria-label="Contact"><i class="fas fa-envelope"></i></button>
-</div>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tatjanasepur1@icloud.com">tatjanasepur1@icloud.com</a><br>
+       Phone: +381 60 7404 466<br>
+       GitHub: <a href="https://github.com/tatjanasepur" target="_blank">github.com/tatjanasepur</a><br>
+       LinkedIn: <a href="https://linkedin.com/in/tatjanasepur" target="_blank">linkedin.com/in/tatjanasepur</a>
+    </p>
+  </section>
 
-<div id="skills" class="content-section active">
-  <h2 class="section-title">Skills</h2>
-  <ul>
-    <li>Oracle PL/SQL, Oracle Forms</li>
-    <li>Oracle Database Management</li>
-    <li>Java, JSP, JSF</li>
-    <li>Angular (basic)</li>
-    <li>HTML, CSS, JavaScript</li>
-    <li>PHP</li>
-    <li>MATLAB, Simulink</li>
-  </ul>
-</div>
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <strong>University of Belgrade, Faculty of Mechanical Engineering</strong><br>
+      Master Academic Studies (2023–2025) – IT-Oriented Mechanical Systems<br>
+      Bachelor’s Degree (2019–2023)
+    </div>
+  </section>
 
-<div id="work" class="content-section">
-  <h2 class="section-title">Work Experience</h2>
-  <p><strong>Gosa Montaža – Intern, Oracle Software Developer</strong><br />
-     March 2025 – Present<br />
-     Developed and maintained an internal application for employee absence tracking using Oracle PL/SQL and Oracle Forms.<br />
-     Assisted with Angular front-end tasks and bug fixing.<br />
-     Documented software modules and contributed to quality assurance.</p>
-  <p><strong>Stylos Studio – Volunteer Developer</strong><br />
-     Summer 2023<br />
-     Created material tracking tool using Java, JSF, and Oracle DB.</p>
-  <p><strong>Web Intern – Faculty of Mechanical Engineering</strong><br />
-     April–June 2023<br />
-     Maintained internal site with JavaScript, HTML, and PHP. Automated reminders for deadlines.</p>
-</div>
+  <section>
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>Languages: Oracle PL/SQL, Java, JavaScript, HTML, CSS, JSP, JSF, PHP</li>
+        <li>Frameworks/Tools: Oracle Forms, Angular (basic), Simulink, MATLAB</li>
+        <li>Databases: Oracle DB (SQL, stored procedures, triggers, packages)</li>
+        <li>Other: Git, Excel (advanced), REST API</li>
+      </ul>
+    </div>
+  </section>
 
-<div id="education" class="content-section">
-  <h2 class="section-title">Education</h2>
-  <ul>
-    <li>Master Academic Studies – University of Belgrade, Faculty of Mechanical Engineering (2023–2025)</li>
-    <li>Bachelor’s Degree – University of Belgrade, Faculty of Mechanical Engineering (2019–2023)</li>
-  </ul>
-</div>
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <strong>Gosa Montaza – Software Intern</strong> (Mar 2025 – Present)<br>
+      • Developed internal Oracle Forms app for tracking absences.<br>
+      • Built PL/SQL logic, integrated Angular frontend, and supported 2nd-line tickets.
+    </div>
+    <div class="card">
+      <strong>Stylos Studio – Volunteer Developer</strong> (Summer 2023)<br>
+      • Created order/job tracking tool using JSF, JSP, and PL/SQL.<br>
+      • Delivered early MVP and maintained Oracle DB logic.
+    </div>
+    <div class="card">
+      <strong>Web Intern – Faculty of Mechanical Engineering</strong> (Apr–Jun 2023)<br>
+      • Maintained site for publishing research.<br>
+      • Wrote JS/PHP code to automate reminder logic.
+    </div>
+  </section>
 
-<div id="projects" class="content-section">
-  <h2 class="section-title">Personal Projects</h2>
-  <p><strong>Spending Tracker (2024)</strong><br />
-     Mini web app to track and visualize spending categories.<br />
-     Technologies: HTML, CSS, JavaScript</p>
-  <p><strong>Master Thesis Model (Ongoing)</strong><br />
-     Developed vehicle safety estimation system.<br />
-     Technologies: MATLAB, Simulink</p>
-</div>
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <strong>Spending Tracker App</strong> (2024)<br>
+      • Tracks categories like food, gas, fun using charts and percentages.<br>
+      • Built with HTML, CSS, JS – hosted on GitHub Pages.
+    </div>
+    <div class="card">
+      <strong>Bank App Support Simulation</strong> (2025)<br>
+      • Simulates internal system support using PL/SQL, JSP, and JSF.<br>
+      • SLA ticket workflow and UI mock for client-facing module.
+    </div>
+    <div class="card">
+      <strong>Master Thesis – Safety System</strong> (Ongoing)<br>
+      • Vehicle safety logic in MATLAB/Simulink based on driving data.
+    </div>
+  </section>
 
-<div id="contact" class="content-section">
-  <h2 class="section-title">Contact</h2>
-  <p>Email: <a href="mailto:tatjanasepur1@icloud.com">tatjanasepur1@icloud.com</a><br />
-     Phone: 060 7404 466</p>
-</div>
-
-<script>
-  const buttons = document.querySelectorAll('.nav-icons button');
-  const sections = document.querySelectorAll('.content-section');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      sections.forEach(sec => sec.classList.remove('active'));
-      button.classList.add('active');
-      const id = button.id.replace('btn-', '');
-      document.getElementById(id).classList.add('active');
-    });
-  });
-</script>
-
+  <footer>
+    Designed & Built by Tatjana Šepur © 2025
+  </footer>
 </body>
 </html>
