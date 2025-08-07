@@ -9,7 +9,7 @@ Dobrodošli! Ovo je moj lični web CV – jednostavan, jasan i profesionalan saj
 - Kontakt informacije
 
 
-➡️ [Klikni da otvoriš sajt](https://github.com/tatjanasepur/tatjanasepur1-cv/tree/main)
+➡️ [Klikni da otvoriš sajt](https://tatjanasepur.github.io/tatjanasepur1-cv/)
 
 
 
